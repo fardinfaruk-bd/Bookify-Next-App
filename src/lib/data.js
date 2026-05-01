@@ -8,8 +8,8 @@ export async function getBooks() {
   const data = await res.json();
   return data;
 }
-export async function getBookById({book_id}) {
-  const res = await fetch(`http://localhost:5000/books/${category_id}`);
+export async function getBookById({id}) {
+  const res = await fetch(`http://localhost:5000/books/${id}`);
   const data = await res.json();
   return data;
 }
