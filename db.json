@@ -1,0 +1,140 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "description": "A gripping psychological thriller that follows Alicia Berenson, a famous painter who inexplicably shoots her husband and then refuses to speak another word. A criminal psychotherapist becomes obsessed with uncovering the truth behind her silence.",
+      "category": "Thriller",
+      "available_quantity": 5,
+      "image_url": "https://i.ibb.co.com/wNp5KFF6/0008415060-L.jpg",
+      "is_new": true
+    },
+    {
+      "id": 2,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "description": "A practical guide to building good habits and breaking bad ones using small daily improvements that lead to big results.",
+      "category": "Self-help",
+      "available_quantity": 8,
+      "image_url": "https://i.ibb.co.com/1G6SQVVK/0008260535-L.jpg",
+      "is_new": true
+    },
+    {
+      "id": 3,
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian novel set in a society under total surveillance, exploring themes of control, freedom, and truth.",
+      "category": "Fiction",
+      "available_quantity": 6,
+      "image_url": "https://i.ibb.co.com/ZpDJqQjJ/0011260565-L.jpg",
+      "is_new": false
+    },
+    {
+      "id": 4,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A powerful story of racial injustice and moral growth seen through the eyes of a young girl in the American South.",
+      "category": "Classic",
+      "available_quantity": 4,
+      "image_url": "https://i.ibb.co.com/LjRmGv8/9780061120084-L.jpg",
+      "is_new": false
+    },
+    {
+      "id": 5,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "description": "An inspiring tale about following your dreams and discovering your personal legend.",
+      "category": "Fiction",
+      "available_quantity": 10,
+      "image_url": "https://i.ibb.co.com/cKRR2YQ5/45762-L.jpg",
+      "is_new": true
+    },
+    {
+      "id": 6,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "description": "A financial guide that challenges traditional ideas about money, investing, and wealth building.",
+      "category": "Finance",
+      "available_quantity": 7,
+      "image_url": "https://i.ibb.co.com/1tRSXYwJ/0008315603-L.jpg",
+      "is_new": false
+    },
+    {
+      "id": 7,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "description": "A fantasy adventure where Bilbo Baggins joins a quest filled with magic, danger, and discovery.",
+      "category": "Fantasy",
+      "available_quantity": 5,
+      "image_url": "https://i.ibb.co.com/wNwQN9PT/0011065702-L.jpg",
+      "is_new": true
+    },
+    {
+      "id": 8,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "description": "A productivity guide that teaches how to focus deeply and achieve meaningful work in a distracted world.",
+      "category": "Productivity",
+      "available_quantity": 9,
+      "image_url": "https://i.ibb.co.com/B2tLmxQV/9781455586691-L.jpg",
+      "is_new": false
+    },
+    {
+      "id": 9,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "description": "An exploration of human history, evolution, and the forces that shaped modern civilization.",
+      "category": "History",
+      "available_quantity": 6,
+      "image_url": "https://i.ibb.co.com/WWnjVC8Q/0008594920-L.jpg",
+      "is_new": true
+    },
+    {
+      "id": 10,
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "description": "A classic self-help book focusing on mindset, success principles, and achieving financial goals.",
+      "category": "Self-help",
+      "available_quantity": 8,
+      "image_url": "https://i.ibb.co.com/pTXRzcR/9781585424337-L.jpg",
+      "is_new": false
+    },
+    {
+      "id": 11,
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "description": "A guide for developers to improve coding practices and become more efficient professionals.",
+      "category": "Programming",
+      "available_quantity": 3,
+      "image_url": "https://i.ibb.co.com/tTFf0PXJ/0010143650-L.jpg",
+      "is_new": true
+    },
+    {
+      "id": 12,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "description": "A handbook of software craftsmanship that teaches how to write clean and maintainable code.",
+      "category": "Programming",
+      "available_quantity": 4,
+      "image_url": "https://i.ibb.co.com/GQJ8SVkf/5547794-L.jpg",
+      "is_new": false
+    }
+  ],
+
+  "categories": [
+    { "id": "C01", "name": "Thriller" },
+    { "id": "C02", "name": "Self-help" },
+    { "id": "C03", "name": "Fiction" },
+    { "id": "C04", "name": "Classic" },
+    { "id": "C05", "name": "Finance" },
+    { "id": "C06", "name": "Fantasy" },
+    { "id": "C07", "name": "Productivity" },
+    { "id": "C08", "name": "History" },
+    { "id": "C09", "name": "Programming" },
+    { "id": "C10", "name": "New Arrivals" }
+  ]
+}
+
+
+

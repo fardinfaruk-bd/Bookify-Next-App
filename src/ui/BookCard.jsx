@@ -1,0 +1,25 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
+const BookCard = ({book}) => {
+    return (
+        <Link href={`/all-books/${book.id}`} className="card bg-base-100 shadow-sm border border-gray-200">
+            <figure className='p-6 bg-[#3daab02d]'>
+                <Image src={book.image_url} alt="bookImage" height={100} width={100}  className='rounded-lg '/>
+            </figure>
+            <div className="card-body">
+                <h2 className="card-title text-2xl">
+                    {book.title}
+                </h2>
+                <p className='font-semibold text-[#131313c1]'> {book.author}</p>
+                <p className='text-gray-300 line-clamp-2'>{book.description}</p>
+                <div className="card-actions justify-end">
+                    <button className="btn bg-linear-to-r from-[#212171c4] to-[#3DAAB0] text-white">View Details</button>
+                </div>
+            </div>
+        </Link>
+    );
+};
+
+export default BookCard;
