@@ -1,21 +1,40 @@
-import LeftSidebar from '@/components/AllBook/LeftSidebar';
-import { getBooks } from '@/lib/data';
-import BookCard from '@/ui/BookCard';
-import React from 'react';
+import LeftSidebar from "@/components/AllBook/LeftSidebar";
+import { getBooks } from "@/lib/data";
+import BookCard from "@/ui/BookCard";
 
-const AllBooksPage = async() => {
+const AllBooksPage = async ({ searchParams }) => {
     const Books = await getBooks();
+    const params = await searchParams
+    const category = params.category
+
+    const filteredBooks = category
+        ? Books.filter(
+            (book) =>
+                book.category.toLowerCase() === category.toLowerCase()
+        )
+        : Books;
+
     return (
-        <div className='container mx-auto my-8'>
-            <div className='grid grid-cols-12 gap-5 '>
+        <div className='container mx-auto my-8 mb-30'>
+            <div className='grid grid-cols-12 gap-5'>
                 <div className='col-span-3'>
                     <LeftSidebar />
                 </div>
-                <div className='col-span-9 '>
-                    <h2 className='font-bold text-xl text-[#403F3F] mb-6'>All Books</h2>
-                    <div className='border border-[#E7E7E7] rounded-lg p-7.5 space-y-5 grid grid-cols-3 gap-5'>
+
+                <div className='col-span-9'>
+                    <h2 className='font-bold text-xl mb-6 '>
+                        {category || "All Books"}
+                    </h2>
+
+                    <div className='grid grid-cols-3 gap-5'>
                         {
-                            Books.map((book) => <BookCard book={book} key={book.id} />)
+                            filteredBooks.length > 0 ? (
+                                filteredBooks.map((book) => (
+                                    <BookCard key={book.id} book={book} />
+                                ))
+                            ) : (
+                                <p>No books found 😢</p>
+                            )
                         }
                     </div>
                 </div>

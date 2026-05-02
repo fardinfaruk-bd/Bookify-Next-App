@@ -13,9 +13,7 @@ const BookCard = ({book}) => {
                 <h2 className="card-title text-xl">
                     {book.title}
                 </h2>
-                <h2 className="card-title text-xl">
-                    {book.title}
-                </h2>
+            
                 <p className='font-semibold text-[#131313c1] flex items-center gap-2'> <FaUser /> {book.author}</p>
                 <p className='text-gray-500 line-clamp-2'>{book.description}</p>
                 <Link href={`/all-books/${book.id}`} className="card-actions justify-end">

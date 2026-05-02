@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import LogoImage from "@/assets/Logo.png"
@@ -19,7 +20,9 @@ const Navbar = () => {
                     <li><NavLinks href="/profile">My Profile</NavLinks></li>
                 </ul>
                 <div>
-                    <Button className="bg-linear-to-r from-[#21217167] to-[#3DAAB0]" >Login</Button>
+                    <Link href={"/login"}>
+                        <Button className="bg-linear-to-r from-[#21217167] to-[#3DAAB0]" >Login</Button>
+                    </Link>
                 </div>
 
             </header>
