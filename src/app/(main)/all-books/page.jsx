@@ -15,13 +15,13 @@ const AllBooksPage = async ({ searchParams }) => {
         : Books;
 
     return (
-        <div className='w-[90%] sm:container mx-auto my-8 mb-30'>
-            <div className='grid grid-cols-3 md:grid-cols-12 gap-5'>
-                <div className='col-span-1 md:col-span-3'>
+        <div className='w-[95%] sm:container mx-auto my-8 mb-30'>
+            <div className='grid grid-cols-5 md:grid-cols-12 gap-5'>
+                <div className='col-span-2 md:col-span-3'>
                     <LeftSidebar />
                 </div>
 
-                <div className='col-span-2 md:col-span-9'>
+                <div className='col-span-3 md:col-span-9'>
                     <h2 className='font-bold  mb-6 text-[16px] sm:text-xl'>
                         {category || "All Books"}
                     </h2>

@@ -31,7 +31,7 @@ const LeftSidebar = () => {
 
 
     return (
-        <div className="space-y-5 border border-[#E7E7E7] rounded-lg p-3 md:p-7.5 h-full">
+        <div className="space-y-5 border border-[#E7E7E7] rounded-lg p-2 md:p-5 lg:p-6 h-full">
             <h2 className="font-bold text-sm md:text-xl text-[#403F3F] mb-6">
                 Categories
             </h2>
@@ -48,7 +48,7 @@ const LeftSidebar = () => {
                 <Link
                     key={category.id}
                     href={`/all-books?category=${category.name}`}
-                    className={`btn w-full ${activeCategory === category.name
+                    className={`btn w-full text-sm md:text-lg ${activeCategory === category.name
                             ? "bg-[#3DAAB0] text-white"
                             : "bg-[#3daab02d]"
                         }`}
