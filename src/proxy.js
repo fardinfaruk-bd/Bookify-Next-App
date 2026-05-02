@@ -4,7 +4,7 @@ import { auth } from './lib/auth';
 export async function proxy(request) {
   const { pathname } = request.nextUrl;
 
-  // 👉 protect dynamic all-books + profile
+  
   const isProtectedRoute =
     pathname.startsWith('/all-books/') || pathname === '/profile';
 
