@@ -13,13 +13,13 @@ const BooksDetailsPage = async ({ params }) => {
 
 
     return (
-        <div className='grid grid-cols-12 container mx-auto mt-20 gap-10 mb-30'>
-            <div className='col-span-12 md:col-span-5'>
+        <div className='grid grid-cols-1 md:grid-cols-12 container mx-auto mt-20 gap-10 mb-30'>
+            <div className='col-span-1 md:col-span-5'>
                 <figure className='p-6 bg-[#3daab02d] flex justify-center items-center rounded-lg'>
-                    <Image src={Book.image_url} alt="bookImage" height={400} width={400} className='rounded-lg ' />
+                    <Image src={Book.image_url} alt="bookImage" height={400} width={400} className='w-[60%] md:w-[80%] rounded-lg ' />
                 </figure>
             </div>
-            <div className="space-y-10 p-2 col-span-12 md:col-span-7">
+            <div className="space-y-10 p-2 col-span-1 md:col-span-7">
                 <div className='space-y-2'>
                     <h2 className="card-title text-5xl">{Book.title}</h2>
                     <p className='font-semibold text-[#131313c1] flex items-center gap-2'> By: <span className='text-black'>{Book.author}</span></p>
