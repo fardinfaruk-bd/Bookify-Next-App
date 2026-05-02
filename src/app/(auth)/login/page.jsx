@@ -14,6 +14,7 @@ const LoginPage = () => {
 
     const handleLogin = async (data) => {
         toast.success("Sign in successfully")
+        console.log(data);
 
     }
 
@@ -30,7 +31,7 @@ const LoginPage = () => {
                     </fieldset>
                     <fieldset className="fieldset relative">
                         <legend className="fieldset-legend font-semibold text-[18px] text[#403F3F]">Password</legend>
-                        <input type={isShowPassword ? "text" : "password"} {...register("password", { required: "This Password field is required" })} className="input w-full bg-[#F3F3F3] border-none" placeholder="Enter your password" />
+                        <input type={isShowPassword ? "text" : "password"} {...register("password", { required: "This Password field is required" } )} className="input w-full bg-[#F3F3F3] border-none" placeholder="Enter your password" />
                         <span className='absolute right-2 top-4 cursor-pointer' onClick={() => setIsShowPassword(!isShowPassword)}>{isShowPassword ? <FaEyeSlash /> : <FaEye />}</span>
                         {errors.password && <span className='text-red-500'>{errors.password?.message}</span>}
                     </fieldset>

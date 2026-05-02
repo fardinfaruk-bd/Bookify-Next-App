@@ -15,6 +15,7 @@ const RegisterPage = () => {
 
     const handleRegister = async (data) => {
         toast.success("Sign up successfully")
+        const {email, password, name, photo} = data;
 
     }
 
