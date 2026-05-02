@@ -27,7 +27,7 @@ const Navbar = () => {
                 </ul>
                 {isPending ? <span className="loading loading-spinner loading-xl"></span> : user ? <div className='flex gap-2 items-center'>
                     <h2 className='font-bold'>{user?.name}</h2>
-                    <Image src={user?.image || UserImage} alt={user?.name} width={40} height={40} className="rounded-full" />
+                    <Image src={ user?.image || UserImage} alt={user?.name} width={40} height={40} referrerPolicy='no-referrer' className="rounded-full" />
                     <Button className="bg-red-500 text-white" onClick={async() => await authClient.signOut()}>Logout</Button>
                 </div> :
                     <Link href={"/login"}>

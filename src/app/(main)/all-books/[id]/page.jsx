@@ -1,4 +1,5 @@
 import { getBookById } from '@/lib/data';
+import BookNotFound from '@/ui/BookNotFound';
 import MyBtn from '@/ui/MyBtn';
 import Image from 'next/image';
 import React from 'react';
@@ -6,6 +7,9 @@ import React from 'react';
 const BooksDetailsPage = async ({ params }) => {
     const { id } = await params;
     const Book = await getBookById({ id })
+    if(Book.id !== id) {
+        return <BookNotFound />
+    }
 
 
     return (
