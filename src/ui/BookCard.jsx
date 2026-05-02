@@ -7,7 +7,7 @@ const BookCard = ({book}) => {
     return (
         <div href={`/all-books/${book.id}`} className="card bg-base-100 shadow-sm border border-gray-200">
             <figure className='p-6 bg-[#3daab02d]'>
-                <Image src={book.image_url} alt="bookImage" height={100} width={100}  className='rounded-lg '/>
+                <Image src={book.image_url} alt="bookImage" height={80} width={80}  className='rounded-lg '/>
             </figure>
             <div className="card-body p-2">
                 <h2 className="card-title text-xl">

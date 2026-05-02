@@ -15,18 +15,18 @@ const AllBooksPage = async ({ searchParams }) => {
         : Books;
 
     return (
-        <div className='container mx-auto my-8 mb-30'>
-            <div className='grid grid-cols-12 gap-5'>
-                <div className='col-span-3'>
+        <div className='w-[90%] sm:container mx-auto my-8 mb-30'>
+            <div className='grid grid-cols-3 md:grid-cols-12 gap-5'>
+                <div className='col-span-1 md:col-span-3'>
                     <LeftSidebar />
                 </div>
 
-                <div className='col-span-9'>
-                    <h2 className='font-bold text-xl mb-6 '>
+                <div className='col-span-2 md:col-span-9'>
+                    <h2 className='font-bold  mb-6 text-[16px] sm:text-xl'>
                         {category || "All Books"}
                     </h2>
 
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
                         {
                             filteredBooks.length > 0 ? (
                                 filteredBooks.map((book) => (
