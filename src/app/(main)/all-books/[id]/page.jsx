@@ -12,6 +12,7 @@ const BooksDetailsPage = async ({ params }) => {
     }
 
 
+
     return (
         <div className='grid grid-cols-1 md:grid-cols-12 container mx-auto mt-20 gap-10 mb-30'>
             <div className='col-span-1 md:col-span-5'>
