@@ -1,5 +1,6 @@
 "use client"
 
+import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import React, { useState } from 'react';
@@ -13,9 +14,26 @@ const RegisterPage = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [isShowPassword, setIsShowPassword] = useState(false)
 
-    const handleRegister = async (data) => {
-        toast.success("Sign up successfully")
-        const {email, password, name, photo} = data;
+    const handleRegister = async(data) => {
+        const { name, photo, email, password } = data;
+
+        const { data: res, error } = await authClient.signUp.email({
+            name: name,
+            image: photo,
+            email: email,
+            password: password,
+        })
+
+        console.log(res, error);
+        if (error) {
+            toast.error(error.message)
+        }
+        if (res) {
+            await authClient.signOut();
+            toast.success("Sign up successfully")
+            redirect("/login")
+
+        }
 
     }
 
@@ -46,7 +64,7 @@ const RegisterPage = () => {
                         <span className='absolute right-2 top-4 cursor-pointer' onClick={() => setIsShowPassword(!isShowPassword)}>{isShowPassword ? <FaEyeSlash /> : <FaEye />}</span>
                         {errors.password && <span className='text-red-500'>{errors.password?.message}</span>}
                     </fieldset>
-                    
+
                     <button className='btn bg-[#403F3F] text-white w-full text-xl p-6'>Log In</button>
 
                 </form>
