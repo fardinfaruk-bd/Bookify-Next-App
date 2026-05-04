@@ -8,11 +8,11 @@ const BookGenres = ({ Books }) => {
     const ProgrammingBooks = Books.filter((book) => book.category === "Programming");
 
     return (
-        <div className='container mx-auto mb-10'>
-            <h2 className='font-bold text-4xl text-center mb-5'>Book Genres</h2>
+        <div className='container mx-auto mb-10 border-y border-[#3DAAB0]  py-10'>
+            <h2 className='font-bold text-4xl text-center mb-10'>Book Genres</h2>
 
-            <div className='grid grid-cols-1 bg-white md:grid-cols-3 w-[80%] mx-auto '>
-                <div className=' px-10 py-20 w-96'>
+            <div className='grid grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-3  w-[80%] mx-auto gap-10'>
+                <div >
                     <h2 className='text-xl font-semibold'>Triller</h2>
                     <div className='flex flex-col gap-2'>
                         {
@@ -22,7 +22,7 @@ const BookGenres = ({ Books }) => {
                     </div>
                 </div>
 
-                <div className=' px-10 py-20 w-96'>
+                <div >
                     <h2 className='text-xl font-semibold'>History</h2>
                     <div className='flex flex-col gap-2'>
                         {
@@ -32,7 +32,7 @@ const BookGenres = ({ Books }) => {
                     </div>
                 </div>
 
-                <div className=' px-10 py-20 w-96'>
+                <div >
                     <h2 className='text-xl font-semibold'>Programming</h2>
                     <div className='flex flex-col gap-2'>
                         {
