@@ -31,7 +31,7 @@ const LeftSidebar = () => {
 
 
     return (
-        <div className="space-y-5 border border-[#E7E7E7] rounded-lg p-2 md:p-5 lg:p-6 h-full">
+        <div className="space-y-5 border border-[#E7E7E7] rounded-lg p-2 md:p-5 lg:p-6 ">
             <h2 className="font-bold text-sm md:text-xl text-[#403F3F] mb-6">
                 Categories
             </h2>

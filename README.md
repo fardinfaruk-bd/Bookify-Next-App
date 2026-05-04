@@ -1,36 +1,204 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 Bookify
 
-## Getting Started
+🔗 **Live Website:** https://bookify-next-app.vercel.app
 
-First, run the development server:
+**Bookify** is a modern and interactive book discovery web application where users can explore, browse, and manage books easily. It provides a clean UI, smooth user experience, and essential features like authentication, category filtering, and detailed book views.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔐 Authentication System
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Register with:
 
-## Learn More
+  * Name, Email, Photo URL, Password
+* Login using:
 
-To learn more about Next.js, take a look at the following resources:
+  * Email & Password
+  * Google Authentication
+* After Login:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  * Navbar shows: **Hello, Username 👋**
+  * Logout button दिखाई देता है
+* Before Login:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  * Login button visible
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏠 Home Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔹 Navbar
+
+* Logo → Redirects to Home
+* Navigation Links:
+
+  * Home
+  * All Books
+  * My Profile
+* Right Side:
+
+  * Login / User Info + Logout
+
+---
+
+### 🔹 Banner Section
+
+* Text: **"Find your next read"**
+* Button: **Browse Now** → Redirects to All Books
+* Right Side: Banner Image
+
+---
+
+### 🔹 New Arrivals
+
+* Built with **React Fast Marquee**
+* Auto-scrolling books:
+
+  * Image
+  * Title
+
+---
+
+### 🔹 Featured Books
+
+* Built using **Swiper JS**
+* Displays **10 scrollable book cards**
+* Each card includes:
+
+  * Book info
+  * **View Details button**
+
+---
+
+### 🔹 Book Genres
+
+* Categories:
+
+  * Thriller
+  * History
+  * Programming
+* Each category:
+
+  * Shows 2 preview books
+  * **See All button** → View full category
+
+---
+
+### 🔹 Quotes Section
+
+* Displays **3 book-related inspirational quotes**
+
+---
+
+### 🔹 Footer
+
+* Contains essential links & info
+
+---
+
+## 📖 All Books Page
+
+### Layout:
+
+* **Left Sidebar:** Categories
+* **Right Side:** Books
+
+### Features:
+
+* Category-based filtering
+* Dynamic UI updates
+* Click → Book Details Page
+
+---
+
+## 📘 Book Details Page
+
+### Information:
+
+* Book Image
+* Title
+* Author
+* Description
+* Quantity
+* Category
+* Published Date
+
+### Action:
+
+* **Borrow This Book Button**
+
+  * Toast message:
+    👉 *"BookName Borrowed successfully"*
+
+---
+
+## 👤 My Profile
+
+* Displays:
+
+  * User Image
+  * Name
+  * Email
+
+### Feature:
+
+* **Update Your Info**
+
+  * Update Name
+  * Update Profile Image
+
+---
+
+## 🛠️ Technologies Used
+
+### 💻 Frontend
+
+* Next.js
+* React.js
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+
+### 📦 Libraries
+
+* React Fast Marquee
+* React Toastify
+* Swiper JS
+* Better Auth
+
+---
+
+## 🎯 Core Highlights
+
+* ✅ Authentication (Email + Google)
+* ✅ Dynamic Navbar
+* ✅ Category Filtering
+* ✅ Book Details View
+* ✅ Borrow System with Toast
+* ✅ Smooth UI & Animations
+* ✅ Fully Responsive Design
+
+---
+
+## 🔮 Future Improvements
+
+* 🔍 Advanced Search System
+* ❤️ Wishlist Feature
+* 🛒 E-commerce Integration
+* 🌙 Dark Mode
+* ⭐ Ratings & Reviews
+
+---
+
+## 🧑‍💻 Author
+
+**Fardin**
+Frontend Developer
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub and share your feedback!
