@@ -11,6 +11,11 @@ import UserImage from "@/assets/user.png"
 
 const Navbar = () => {
 
+    const handleLogout = async () => {
+        await authClient.signOut();
+        window.location.reload();
+    };
+
     const { data: session, isPending } = authClient.useSession();
     const user = session?.user;
     return (
@@ -43,10 +48,10 @@ const Navbar = () => {
                 {isPending ? <span className="loading loading-spinner loading-xl"></span> : user ? <div className=' flex gap-2 items-center'>
                     <h2 className='font-bold hidden md:flex'> Hello! {user?.name}</h2>
                     <Image src={user?.image || UserImage} alt={user?.name} width={40} height={40} referrerPolicy='no-referrer' className="rounded-full" />
-                    <Button className="bg-red-500 text-white" onClick={async () => await authClient.signOut()}>Logout</Button>
+                    <Button className="bg-red-500 text-white" onClick={handleLogout}>Logout</Button>
                 </div> :
                     <Link href={"/login"}>
-                        <Button  className="bg-linear-to-r from-[#21217167] to-[#3DAAB0] text-xs md:text-[16px]" >Login</Button>
+                        <Button className="bg-linear-to-r from-[#21217167] to-[#3DAAB0] text-xs md:text-[16px]" >Login</Button>
                     </Link>
                 }
             </div>
