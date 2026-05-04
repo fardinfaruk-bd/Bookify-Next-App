@@ -36,7 +36,7 @@ const FeatureBook = ({ Books }) => {
                         slidesPerView: 4, 
                     },
                 }}
-                className="mySwiper"
+                className="mySwiper mb-10"
             >
                 {Books.slice(0, 10).map((book) => (
                     <SwiperSlide key={book.id}>
