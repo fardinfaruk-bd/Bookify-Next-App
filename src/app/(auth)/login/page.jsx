@@ -41,8 +41,8 @@ const LoginPage = () => {
 
     return (
         <div className='container mx-auto min-h-screen flex justify-center items-center bg-[#F3F3F3]'>
-            <div className='p-5 rounded-xl bg-white'>
-                <h1 className='font-semibold text-[#403F3F] text-[30px] text-center p-10 '>Login Your Account</h1>
+            <div className='p-8 rounded-xl bg-white'>
+                <h1 className='font-semibold bg-linear-to-r from-[#21217167] to-[#3DAAB0] bg-clip-text text-transparent text-[30px] text-center px-10 py-5'>Login Your Account</h1>
                 <hr className='border-[#c9bebe] mb-6' />
                 <form className='space-y-4' onSubmit={handleSubmit(handleLogin)}>
                     <fieldset className="fieldset">
@@ -56,15 +56,15 @@ const LoginPage = () => {
                         <span className='absolute right-2 top-4 cursor-pointer' onClick={() => setIsShowPassword(!isShowPassword)}>{isShowPassword ? <FaEyeSlash /> : <FaEye />}</span>
                         {errors.password && <span className='text-red-500'>{errors.password?.message}</span>}
                     </fieldset>
-                    <button className='btn bg-[#403F3F] text-white w-full text-xl p-6'>Log In</button>
+                    <button className='btn bg-linear-to-r from-[#21217167] to-[#3DAAB0] text-white w-full text-xl p-6 hover:scale-105 transition duration-300'>Log In</button>
                     <div className='flex justify-center items-center gap-1 mb-5'>
                         <p className='text-[#706F6F]'>Do not have an account?</p>
                         <Link href={"/register"}>
                             <button className='bg-linear-to-r from-[#21217167] to-[#3DAAB0] bg-clip-text text-transparent font-semibold cursor-pointer'>Register</button>
                         </Link>
                     </div>
-                    <div >
-                        <button className='btn w-full border-gray-500 text-gray-500' onClick={handleGoogleLogin}> <FcGoogle /> Login With Google</button>
+                    <div className='mb-5 hover:scale-105 transition duration-300 '>
+                        <button className='btn w-full border-gray-300 text-gray-500 hover:bg-blue-500 hover:text-white hover:border-none' onClick={handleGoogleLogin}> <FcGoogle size="20"/> Login With Google</button>
                     </div>
                 </form>
             </div>

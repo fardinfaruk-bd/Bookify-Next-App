@@ -23,6 +23,7 @@ The application focuses on clean UI, dynamic navigation, authentication, and use
 * **React Toastify**
 * **Swiper JS**
 * **Better Auth**
+* **Mongo DB**
 
 ---
 

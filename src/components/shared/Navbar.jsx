@@ -10,7 +10,6 @@ import UserImage from "@/assets/user.png"
 
 
 const Navbar = () => {
-
     const handleLogout = async () => {
         await authClient.signOut();
         window.location.reload();
@@ -18,6 +17,7 @@ const Navbar = () => {
 
     const { data: session, isPending } = authClient.useSession();
     const user = session?.user;
+
     return (
         <div className="container mx-auto navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
