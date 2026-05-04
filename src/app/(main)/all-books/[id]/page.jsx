@@ -4,6 +4,18 @@ import MyBtn from '@/ui/MyBtn';
 import Image from 'next/image';
 import React from 'react';
 
+
+export const generateMetadata = async({params}) => {
+    const { id } = await params;
+    const book = await getBookById({ id });
+
+    return {
+        title: book.title + " || Bookify",
+        description: book.description,
+    }
+
+};
+
 const BooksDetailsPage = async ({ params }) => {
     const { id } = await params;
     const Book = await getBookById({ id })

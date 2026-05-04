@@ -3,11 +3,11 @@
 import BookCard from '@/ui/BookCard';
 import React from 'react';
 
-// Swiper imports
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {  Pagination  } from 'swiper/modules';
 
-// Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

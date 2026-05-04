@@ -12,7 +12,6 @@ const LoginPage = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const [isShowPassword, setIsShowPassword] = useState(false)
-
     const handleLogin = async(data) => {
 
         const { email, password } = data;

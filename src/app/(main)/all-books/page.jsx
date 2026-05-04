@@ -2,6 +2,11 @@ import LeftSidebar from "@/components/AllBook/LeftSidebar";
 import { getBooks } from "@/lib/data";
 import BookCard from "@/ui/BookCard";
 
+export const metadata = {
+  title: "All Books || Bookify",
+  description: "Online Book Borrowing Platform",
+};
+
 const AllBooksPage = async ({ searchParams }) => {
     const Books = await getBooks();
     const params = await searchParams
