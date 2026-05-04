@@ -1,38 +1,58 @@
 # 📚 Bookify
 
-🔗 **Live Website:** https://bookify-next-app.vercel.app
-
-**Bookify** is a modern and interactive book discovery web application where users can explore, browse, and manage books easily. It provides a clean UI, smooth user experience, and essential features like authentication, category filtering, and detailed book views.
+🔗 **Live Site:** https://bookify-next-app.vercel.app/
 
 ---
 
-## 🚀 Features
+## 📌 Project Overview
 
-### 🔐 Authentication System
+**Bookify** is a modern book discovery and management web application built with Next.js. It allows users to explore books, filter them by categories, view detailed information, and manage their profile with a smooth and interactive user experience.
 
-* Register with:
+The application focuses on clean UI, dynamic navigation, authentication, and user-friendly book browsing.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Next.js (App Router)**
+* **React.js**
+* **HTML5**
+* **CSS3**
+* **JavaScript (ES6+)**
+* **React Fast Marquee**
+* **React Toastify**
+* **Swiper JS**
+* **Better Auth**
+
+---
+
+## 🚀 Key Features
+
+### 1. 🔐 Authentication System
+
+* Users can **Register** with:
 
   * Name, Email, Photo URL, Password
-* Login using:
+* Users can **Login** using:
 
   * Email & Password
   * Google Authentication
-* After Login:
+* After login:
 
-  * Navbar shows: **Hello, Username 👋**
-  * Logout button दिखाई देता है
-* Before Login:
+  * Navbar updates to show **Hello, Username 👋**
+  * Logout
+* Before login:
 
-  * Login button visible
+  * Login button is visible
 
 ---
 
-## 🏠 Home Page
+### 2. 🏠 Modern Home Page UI
 
-### 🔹 Navbar
+#### 🔹 Navbar
 
-* Logo → Redirects to Home
-* Navigation Links:
+* Logo (click → Home)
+* NavLinks:
 
   * Home
   * All Books
@@ -41,100 +61,84 @@
 
   * Login / User Info + Logout
 
----
-
-### 🔹 Banner Section
+#### 🔹 Banner Section
 
 * Text: **"Find your next read"**
 * Button: **Browse Now** → Redirects to All Books
-* Right Side: Banner Image
+* Right side image for visual appeal
 
----
-
-### 🔹 New Arrivals
+#### 🔹 New Arrivals
 
 * Built with **React Fast Marquee**
-* Auto-scrolling books:
+* Auto-scrolling books with image & title
 
-  * Image
-  * Title
-
----
-
-### 🔹 Featured Books
+#### 🔹 Featured Books
 
 * Built using **Swiper JS**
 * Displays **10 scrollable book cards**
-* Each card includes:
+* Each card includes a **View Details button**
 
-  * Book info
-  * **View Details button**
-
----
-
-### 🔹 Book Genres
+#### 🔹 Book Genres
 
 * Categories:
 
   * Thriller
   * History
   * Programming
-* Each category:
+* Each category shows:
 
-  * Shows 2 preview books
-  * **See All button** → View full category
+  * 2 preview books
+  * **See All button** → View all books in that category
 
----
+#### 🔹 Quotes Section
 
-### 🔹 Quotes Section
+* Displays 3 inspirational quotes about books
 
-* Displays **3 book-related inspirational quotes**
+#### 🔹 Footer
 
----
-
-### 🔹 Footer
-
-* Contains essential links & info
+* Contains essential links and information
 
 ---
 
-## 📖 All Books Page
+### 3. 📖 All Books Page
 
-### Layout:
+* Left Sidebar:
 
-* **Left Sidebar:** Categories
-* **Right Side:** Books
+  * Category list
+* Right Side:
 
-### Features:
+  * All book cards
+
+#### Features:
 
 * Category-based filtering
 * Dynamic UI updates
-* Click → Book Details Page
+* Click on a card → Book Details Page
 
 ---
 
-## 📘 Book Details Page
+### 4. 📘 Book Details Page
 
-### Information:
+* Displays:
 
-* Book Image
-* Title
-* Author
-* Description
-* Quantity
-* Category
-* Published Date
+  * Book Image
+  * Title
+  * Author
+  * Description
+  * Quantity
+  * Category
+  * Published Date
 
-### Action:
+#### Action:
 
 * **Borrow This Book Button**
 
-  * Toast message:
+  * Shows toast notification:
     👉 *"BookName Borrowed successfully"*
 
 ---
 
-## 👤 My Profile
+### 5. 👤 My Profile
 
 * Displays:
 
@@ -142,7 +146,7 @@
   * Name
   * Email
 
-### Feature:
+#### Feature:
 
 * **Update Your Info**
 
@@ -151,54 +155,37 @@
 
 ---
 
-## 🛠️ Technologies Used
+### 6. 🔒 Private Routes & Security
 
-### 💻 Frontend
-
-* Next.js
-* React.js
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-
-### 📦 Libraries
-
-* React Fast Marquee
-* React Toastify
-* Swiper JS
-* Better Auth
+* **Book Details Page** and **My Profile Page** are protected routes
+* Users must be logged in to access these pages
+* Implemented using **Proxy-based route protection**
+* Unauthorized users are redirected to the login page
 
 ---
 
-## 🎯 Core Highlights
+## 🎯 Purpose
 
-* ✅ Authentication (Email + Google)
-* ✅ Dynamic Navbar
-* ✅ Category Filtering
-* ✅ Book Details View
-* ✅ Borrow System with Toast
-* ✅ Smooth UI & Animations
-* ✅ Fully Responsive Design
+Bookify is designed to provide a smooth and engaging platform for users to discover books, explore categories, and interact with book content in a modern web environment.
 
 ---
 
-## 🔮 Future Improvements
+## 💡 Future Improvements
 
-* 🔍 Advanced Search System
-* ❤️ Wishlist Feature
-* 🛒 E-commerce Integration
+* 🔍 Advanced Search & Filtering
+* ❤️ Wishlist System
+* 🛒 Book Purchase / E-commerce Integration
 * 🌙 Dark Mode
 * ⭐ Ratings & Reviews
 
 ---
 
-## 🧑‍💻 Author
+## 👨‍💻 Author
 
-**Fardin**
-Frontend Developer
+Developed by **Md Fardin Faruk**
 
 ---
 
 ## ⭐ Support
 
-If you like this project, give it a ⭐ on GitHub and share your feedback!
+If you like this project, don’t forget to give it a ⭐ on GitHub!
