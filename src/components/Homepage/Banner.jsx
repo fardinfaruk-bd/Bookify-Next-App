@@ -6,28 +6,37 @@ import 'animate.css';
 
 const Banner = () => {
     return (
-        <div className="bg-[#a9d6d93c] min-h-[80vh] container mx-auto">
-            <div className="md:flex-row flex flex-col justify-between w-full p-10 md:p-20 lg:p-30 items-center gap-10 md:gap-30">
+        <div className="relative bg-[url('https://i.ibb.co.com/GvhvVmdK/mordern-library-202605041920.jpg')] bg-cover min-h-[80vh] container mx-auto">
 
-                
+            <div className="absolute inset-0 bg-black opacity-60 blur/60"></div>
+
+            <div className="relative z-10 md:flex-row flex flex-col justify-between w-full p-10 md:p-20 lg:p-30 items-center gap-10 md:gap-20">
+
+
                 <div className='space-y-8 animate__animated animate__fadeInLeft'>
-                    <h1 className="text-center md:text-left text-6xl font-bold">Find Your <br />Next <span className='bg-linear-to-r from-[#21217167] to-[#3DAAB0] bg-clip-text text-transparent text-7xl'> Read!!!</span></h1>
+                    <h1 className="text-center md:text-left text-6xl lg:text-8xl font-bold text-white">
+                        Find Your <br />
+                        Next
+                        <span className='bg-linear-to-r from-teal-500 to-green-500 bg-clip-text text-transparent text-6xl md:text-8xl lg:text-8xl bg-amber-30 italic'> Read!!!</span>
+                    </h1>
+                    <p className='text-xl text-white text-center md:text-left'>Best Books Collection and Online Book Borrowing Platform</p>
+
                     <div className='flex justify-center md:justify-start'>
                         <Link href={"/all-books"}>
-                            <button className="btn bg-linear-to-r from-[#212171c4] to-[#3DAAB0] text-white">
+                            <button className="btn text-xl px-15 py-8 border-none shadow-none bg-linear-to-r from-teal-500 to-green-500 text-white animate-pulse hover:animate-none">
                                 Browse Now
                             </button>
                         </Link>
                     </div>
                 </div>
 
-                
+
                 <div className='animate__animated animate__fadeInRight'>
-                    <Image 
-                        src={BannerImage} 
-                        alt="BannerImage" 
-                        height={500} 
-                        width={500} 
+                    <Image
+                        src={BannerImage}
+                        alt="BannerImage"
+                        height={500}
+                        width={500}
                         className='w-100 rounded-lg shadow-xl'
                     />
                 </div>
