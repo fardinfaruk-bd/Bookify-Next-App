@@ -8,7 +8,7 @@ const LatestBook = async () => {
     const NewArrival = books.filter(book => book.is_new === true);
 
     return (
-        <div className='flex flex-col md:flex-row items-center gap-4 justify-between bg-[#F3F3F3] p-3 container mx-auto my-15  mt-15'>
+        <div className='flex flex-col md:flex-row items-center gap-4 justify-between bg-[#a9d6d93c] p-3 container mx-auto my-15  mt-15'>
             <button className='btn bg-[#3DAAB0] text-white text-xl font-medium p-5'>New Arrivals:</button>
             <Marquee pauseOnHover={true} speed={100} className='text-[#403F3F] font-medium text-xl space-x-5'>
 
