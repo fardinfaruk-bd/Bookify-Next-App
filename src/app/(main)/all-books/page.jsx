@@ -13,7 +13,7 @@ const AllBooksPage = async ({ searchParams }) => {
                 book.category.toLowerCase() === category.toLowerCase()
         )
         : Books;
-
+    
     return (
         <div className='w-[95%] sm:container mx-auto my-8 mb-30'>
             <div className='grid grid-cols-5 md:grid-cols-12 gap-5'>
@@ -26,7 +26,7 @@ const AllBooksPage = async ({ searchParams }) => {
                         {category || "All Books"}
                     </h2>
 
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {
                             filteredBooks.length > 0 ? (
                                 filteredBooks.map((book) => (
