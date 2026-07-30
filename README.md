@@ -181,6 +181,94 @@ Bookify is designed to provide a smooth and engaging platform for users to disco
 
 ---
 
+## ⚙️ Getting Started & Installation
+
+Follow these instructions to set up and run **Bookify** locally on your machine.
+
+### 📋 Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+- **Node.js:** `v18.17.0` or higher
+- **Package Manager:** `npm`, `yarn`, or `pnpm`
+- **Database:** A local **MongoDB** instance or a cloud **MongoDB Atlas** database URI.
+- **Google OAuth Credentials:** (Optional) Client ID and Secret if testing Google Login locally.
+
+---
+
+### 📥 Step-by-Step Installation
+
+<Sequence>
+  <Step title="Clone the Repository" subtitle="Terminal command">
+    Clone the project repository to your local machine and switch to the project directory:
+    ```bash
+    git clone https://github.com/fardinfaruk-bd/Bookify-Next-App.git
+    cd bookify
+    ```
+  </Step>
+
+  <Step title="Install Dependencies" subtitle="Package management">
+    Install all required dependencies (including Swiper, React Fast Marquee, React Toastify, and Better Auth):
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+  </Step>
+
+  <Step title="Configure Environment Variables" subtitle="Root configuration">
+    Create a `.env.local` file in the root folder of your project:
+    ```bash
+    touch .env.local
+    ```
+
+    Add the following environment variables to your `.env.local` file:
+
+    ```env
+    # App URL
+    NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+    # MongoDB Database Connection
+    MONGODB_URI=your_mongodb_connection_string
+
+    # Better Auth Secrets
+    BETTER_AUTH_SECRET=your_better_auth_secret_key
+    BETTER_AUTH_URL=http://localhost:3000
+
+    # Google OAuth (for Google Login)
+    GOOGLE_CLIENT_ID=your_google_client_id
+    GOOGLE_CLIENT_SECRET=your_google_client_secret
+    ```
+  </Step>
+
+  <Step title="Run the Development Server" subtitle="Launch application">
+    Start the local Next.js development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
+
+    Open your browser and navigate to http://localhost:3000 to view Bookify.
+  </Step>
+</Sequence>
+
+---
+
+### 🧪 Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Runs the development server on `localhost:3000` |
+| `npm run build` | Builds the application for production deployment |
+| `npm run start` | Starts the production server build |
+| `npm run lint` | Runs ESLint to check for code syntax and formatting issues |
+
+---
+
 ## 👨‍💻 Author
 
 Developed by **Md Fardin Faruk**
